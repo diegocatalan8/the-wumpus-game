@@ -182,6 +182,13 @@ const useBoard = () => {
                 setButton12(false);
                 setButton13(true);
             }
+            setTimeout(()=>{
+                if(useButton12.current){
+                    useButton12.current.focus();
+                    setButton12(true);
+                    setButton13(true);
+                } 
+            }, 250)
         }
 
         if(e.key === 'ArrowLeft'){
@@ -294,6 +301,13 @@ const useBoard = () => {
                 setButton15(true);
                 setButton16(false);
             }
+            setTimeout(()=>{
+                if(useButton16.current){
+                    useButton16.current.focus();
+                    setButton15(true);
+                    setButton16(true);
+                }
+            }, 250)
         }
 
         if(e.key === 'ArrowUp'){
@@ -354,6 +368,13 @@ const useBoard = () => {
                 setButton18(false);
                 setButton28(true);
             }
+            setTimeout(()=>{
+                if(useButton18.current){
+                    useButton18.current.focus();
+                    setButton18(true);
+                    setButton28(true);
+                }
+            }, 250)
         }
     }
 //////////////////
@@ -376,6 +397,14 @@ const useBoard = () => {
                 setButton21(false);
                 setButton31(true);
             }
+
+            setTimeout(()=>{
+                if(useButton21.current){
+                    useButton21.current.focus();
+                    setButton21(true);
+                    setButton31(true);
+                }
+            }, 250)
         }
 
         if(e.key === 'ArrowDown'){
@@ -436,6 +465,14 @@ const useBoard = () => {
                 setButton23(false);
                 setButton24(true);
             }
+
+            setTimeout(()=>{
+                if(useButton23.current){
+                    useButton23.current.focus();
+                    setButton23(true);
+                    setButton24(true);
+                }
+            }, 250)
         }
 
         if(e.key === 'ArrowLeft'){
@@ -463,6 +500,14 @@ const useBoard = () => {
                 setButton23(false);
                 setButton13(true);
             }
+
+            setTimeout(()=>{
+                if(useButton23.current){
+                    useButton23.current.focus();
+                    setButton23(true);
+                    setButton13(true);
+                }
+            }, 250)
         }
     }
 
@@ -470,20 +515,29 @@ const useBoard = () => {
             
         if(e.key === 'ArrowRight'){
             e.preventDefault();
-            if(useButton25.current){
-                useButton25.current.focus();
-                setButton25(true);
-                setButton24(true);
-            }
+
+            setTimeout(()=>{
+                if(useButton25.current){
+                    useButton25.current.focus();
+                    setButton25(true);
+                    setButton24(true);
+                    setButton23(false);
+                }
+            }, 300)
+            
         }
 
         if(e.key === 'ArrowLeft'){
             e.preventDefault();
-            if(useButton23.current){
-                useButton23.current.focus();
-                setButton24(true);
-                setButton23(true);
-            }
+            setTimeout(()=>{
+                if(useButton23.current){
+                    useButton23.current.focus();
+                    setButton24(true);
+                    setButton23(true);
+                    setButton25(false);
+                }
+            }, 300)
+            
         }
 
         if(e.key === 'ArrowUp'){
@@ -529,6 +583,13 @@ const useBoard = () => {
                 setButton25(false);
                 setButton24(true);
             }
+            setTimeout(()=>{
+                if(useButton25.current){
+                    useButton25.current.focus();
+                    setButton25(true);
+                    setButton24(true);
+                }
+            }, 250)
         }
 
         if(e.key === 'ArrowUp'){
@@ -547,6 +608,13 @@ const useBoard = () => {
                 setButton25(false);
                 setButton15(true);
             }
+            setTimeout(()=>{
+                if(useButton25.current){
+                    useButton25.current.focus();
+                    setButton25(true);
+                    setButton15(true);
+                }
+            }, 250)
 
         }
     }
@@ -600,6 +668,13 @@ const useBoard = () => {
                 setButton28(true);
                 setButton27(false);
             }
+            setTimeout(()=>{
+                if(useButton27.current){
+                    useButton27.current.focus();
+                    setButton28(true);
+                    setButton27(true);
+                }
+            }, 250)
         }
 
         if(e.key === 'ArrowLeft'){
@@ -618,6 +693,14 @@ const useBoard = () => {
                 setButton27(false);
                 setButton37(true);
             }
+            setTimeout(()=>{
+                if(useButton27.current){
+                    useButton27.current.focus();
+                    setButton27(true);
+                    setButton37(true);
+                }
+            }, 250)
+            
         }
 
         if(e.key === 'ArrowDown'){
@@ -725,6 +808,14 @@ const useBoard = () => {
                 setButton32(false);
                 setButton31(true);
             }
+
+            setTimeout(()=>{
+                if(useButton32.current){
+                    useButton32.current.focus();
+                    setButton32(true);
+                    setButton31(true);
+                }
+            }, 250)
         }
 
         if(e.key === 'ArrowUp'){
@@ -734,6 +825,14 @@ const useBoard = () => {
                 setButton32(false);
                 setButton42(true);
             }
+
+            setTimeout(()=>{
+                if(useButton32.current){
+                    useButton32.current.focus();
+                    setButton32(true);
+                    setButton42(true);
+                }
+            }, 250)
         }
 
         if(e.key === 'ArrowDown'){
@@ -821,6 +920,13 @@ const useBoard = () => {
                 setButton34(false);
                 setButton24(true);
             }
+            setTimeout(()=>{
+                if(useButton34.current){
+                    useButton34.current.focus();
+                    setButton34(true);
+                    setButton24(true);
+                }
+            }, 250)
         }
     }
 
@@ -873,6 +979,13 @@ const useBoard = () => {
                 setButton37(true);
                 setButton36(false);
             }
+            setTimeout(()=>{
+                if(useButton36.current){
+                    useButton36.current.focus();
+                    setButton37(true);
+                    setButton36(true);
+                }
+            }, 250)
         }
 
         if(e.key === 'ArrowLeft'){
@@ -891,6 +1004,13 @@ const useBoard = () => {
                 setButton36(false);
                 setButton46(true);
             }
+            setTimeout(()=>{
+                if(useButton36.current){
+                    useButton36.current.focus();
+                    setButton36(true);
+                    setButton46(true);
+                }
+            }, 250)
         }
 
         if(e.key === 'ArrowDown'){
@@ -931,21 +1051,29 @@ const useBoard = () => {
 
         if(e.key === 'ArrowUp'){
             e.preventDefault();
-            if(useButton47.current){
-                useButton47.current.focus();
-                setButton37(false);
-                setButton47(true);
-            }
+            setTimeout(()=>{
+                if(useButton47.current){
+                    useButton47.current.focus();
+                    setButton37(true);
+                    setButton47(true);
+                    setButton27(false);
+                }
+            }, 300)
+           
         }
 
         if(e.key === 'ArrowDown'){
             e.preventDefault();
-            if(useButton27.current){
-                useButton27.current.focus();
-                setButton37(false);
-                setButton27(true);
-            }
-
+            setTimeout(() => {
+                if(useButton27.current){
+                    useButton27.current.focus();
+                    setButton37(true);
+                    setButton27(true);
+                    setButton47(false);
+                }
+    
+            }, 300);
+            
         }
     }
 
@@ -977,20 +1105,26 @@ const useBoard = () => {
 
         if(e.key === 'ArrowUp'){
             e.preventDefault();
+            setTimeout(()=>{
             if(useButton52.current){
                 useButton52.current.focus();
                 setButton42(true);
                 setButton52(true);
+                setButton32(false);
             }
+        }, 300)
         }
 
         if(e.key === 'ArrowDown'){
             e.preventDefault();
+            setTimeout(()=>{
             if(useButton32.current){
                 useButton32.current.focus();
                 setButton32(true);
                 setButton42(true);
+                setButton52(false);
             }
+        }, 300)
         }
     }
 
@@ -1012,6 +1146,14 @@ const useBoard = () => {
                 setButton43(false);
                 setButton42(true);
             }
+            
+            setTimeout(()=>{
+                if(useButton43.current){
+                    useButton43.current.focus();
+                    setButton43(true);
+                    setButton42(true);
+                }
+            }, 250)
         }
 
         if(e.key === 'ArrowUp'){
@@ -1059,6 +1201,7 @@ const useBoard = () => {
                 useButton54.current.focus();
                 setButton54(true);
                 setButton44(false);
+                
             }
         }
 
@@ -1081,6 +1224,13 @@ const useBoard = () => {
                 setButton46(true);
                 setButton45(false);
             }
+            setTimeout(()=>{
+                if(useButton45.current){
+                    useButton45.current.focus();
+                    setButton46(true);
+                    setButton45(true);
+                }
+            }, 250)
         }
 
         if(e.key === 'ArrowLeft'){
@@ -1099,6 +1249,13 @@ const useBoard = () => {
                 setButton45(false);
                 setButton55(true);
             }
+            setTimeout(()=>{
+                if(useButton45.current){
+                    useButton45.current.focus();
+                    setButton45(true);
+                    setButton55(true);
+                }
+            }, 250)
         }
 
         if(e.key === 'ArrowDown'){
@@ -1116,20 +1273,28 @@ const useBoard = () => {
             
         if(e.key === 'ArrowRight'){
             e.preventDefault();
-            if(useButton47.current){
-                useButton47.current.focus();
-                setButton47(true);
-                setButton46(true);
-            }
+            setTimeout(() => {
+                if(useButton47.current){
+                    useButton47.current.focus();
+                    setButton47(true);
+                    setButton46(true);
+                    setButton45(false);
+                }
+            }, 300);
+           
         }
 
         if(e.key === 'ArrowLeft'){
             e.preventDefault();
-            if(useButton45.current){
-                useButton45.current.focus();
-                setButton46(true);
-                setButton45(true);
-            }
+            setTimeout(() => {
+                if(useButton45.current){
+                    useButton45.current.focus();
+                    setButton46(true);
+                    setButton45(true);
+                    setButton47(false)
+                }
+            }, 300);
+            
         }
 
         if(e.key === 'ArrowUp'){
@@ -1166,6 +1331,13 @@ const useBoard = () => {
                 setButton48(true);
                 setButton47(false);
             }
+            setTimeout(()=>{
+                if(useButton47.current){
+                    useButton47.current.focus();
+                    setButton48(true);
+                    setButton47(true);
+                }
+            }, 250)
         }
 
         if(e.key === 'ArrowLeft'){
@@ -1175,6 +1347,13 @@ const useBoard = () => {
                 setButton47(false);
                 setButton46(true);
             }
+            setTimeout(()=>{
+                if(useButton47.current){
+                    useButton47.current.focus();
+                    setButton47(true);
+                    setButton46(true);
+                }
+            }, 250)
         }
 
         if(e.key === 'ArrowUp'){
@@ -1184,6 +1363,13 @@ const useBoard = () => {
                 setButton47(false);
                 setButton57(true);
             }
+            setTimeout(()=>{
+                if(useButton47.current){
+                    useButton47.current.focus();
+                    setButton47(true);
+                    setButton57(true);
+                }
+            }, 250)
         }
 
         if(e.key === 'ArrowDown'){
@@ -1193,6 +1379,13 @@ const useBoard = () => {
                 setButton47(false);
                 setButton37(true);
             }
+            setTimeout(()=>{
+                if(useButton47.current){
+                    useButton47.current.focus();
+                    setButton47(true);
+                    setButton37(true);
+                }
+            }, 250)
 
         }
     }
@@ -1290,6 +1483,14 @@ const useBoard = () => {
                 setButton52(false);
                 setButton51(true);
             }
+
+            setTimeout(()=>{
+                if(useButton52.current){
+                    useButton52.current.focus();
+                    setButton52(true);
+                    setButton51(true);
+                }
+            }, 250)
         }
 
         if(e.key === 'ArrowUp'){
@@ -1308,6 +1509,14 @@ const useBoard = () => {
                 setButton52(false);
                 setButton42(true);
             }
+
+            setTimeout(()=>{
+                if(useButton52.current){
+                    useButton52.current.focus();
+                    setButton52(true);
+                    setButton42(true);
+                }
+            }, 250)
         }
     }
 
@@ -1359,6 +1568,13 @@ const useBoard = () => {
                 setButton55(true);
                 setButton54(false);
             }
+            setTimeout(()=>{
+                if(useButton54.current){
+                    useButton54.current.focus();
+                    setButton55(true);
+                    setButton54(true);
+                }
+            }, 250)
         }
 
         if(e.key === 'ArrowLeft'){
@@ -1416,21 +1632,29 @@ const useBoard = () => {
 
         if(e.key === 'ArrowUp'){
             e.preventDefault();
-            if(useButton65.current){
-                useButton65.current.focus();
-                setButton55(true);
-                setButton65(true);
-            }
+            setTimeout(() => {
+                if(useButton65.current){
+                    useButton65.current.focus();
+                    setButton55(true);
+                    setButton65(true);
+                    setButton45(false);
+                }
+            }, 300);
+            
         }
 
         if(e.key === 'ArrowDown'){
             e.preventDefault();
-            if(useButton45.current){
-                useButton45.current.focus();
-                setButton55(true);
-                setButton45(true);
-            }
-
+            setTimeout(() => {
+                if(useButton45.current){
+                    useButton45.current.focus();
+                    setButton55(true);
+                    setButton45(true);
+                    setButton65(false);
+                }
+    
+            }, 300);
+            
         }
     }
     
@@ -1461,21 +1685,27 @@ const useBoard = () => {
 
         if(e.key === 'ArrowUp'){
             e.preventDefault();
-            if(useButton67.current){
-                useButton67.current.focus();
-                setButton57(true);
-                setButton67(true);
-            }
+            setTimeout(() => {
+                if(useButton67.current){
+                    useButton67.current.focus();
+                    setButton57(true);
+                    setButton67(true);
+                    setButton47(false);
+                }
+            }, 300);
+            
         }
 
         if(e.key === 'ArrowDown'){
             e.preventDefault();
-            if(useButton47.current){
-                useButton47.current.focus();
-                setButton57(true);
-                setButton47(true);
-            }
-
+            setTimeout(() => {
+                if(useButton47.current){
+                    useButton47.current.focus();
+                    setButton57(true);
+                    setButton47(true);
+                    setButton67(false);
+                }
+            }, 300);
         }
     }
     
@@ -1488,6 +1718,13 @@ const useBoard = () => {
                 setButton58(false);
                 setButton57(true);
             }
+            setTimeout(()=>{
+                if(useButton58.current){
+                    useButton58.current.focus();
+                    setButton58(true);
+                    setButton57(true);
+                }
+            }, 250)
         }
 
         if(e.key === 'ArrowUp'){
@@ -1507,6 +1744,13 @@ const useBoard = () => {
                 setButton48(true);
                 setButton58(false);
             }
+            setTimeout(()=>{
+                if(useButton58.current){
+                    useButton58.current.focus();
+                    setButton48(true);
+                    setButton58(true);
+                }
+            }, 250)
             
         }
     }
@@ -1538,6 +1782,14 @@ const useBoard = () => {
                 setButton51(true);
                 setButton61(false);
             }
+
+            setTimeout(()=>{
+                if(useButton61.current){
+                    useButton61.current.focus();
+                    setButton51(true);
+                    setButton61(true);
+                }
+            }, 250)
         }
     }
 
@@ -1645,6 +1897,13 @@ const useBoard = () => {
                 setButton74(true);
                 setButton64(false);
             }
+            setTimeout(()=>{
+                if(useButton64.current){
+                    useButton64.current.focus();
+                    setButton74(true);
+                    setButton64(true);
+                }
+            }, 250)
         }
 
         if(e.key === 'ArrowDown'){
@@ -1671,6 +1930,13 @@ const useBoard = () => {
                 setButton66(true);
                 setButton65(false);
             }
+            setTimeout(()=>{
+                if(useButton65.current){
+                    useButton65.current.focus();
+                    setButton66(true);
+                    setButton65(true);
+                }
+            }, 250)
         }
 
         if(e.key === 'ArrowLeft'){
@@ -1698,6 +1964,13 @@ const useBoard = () => {
                 setButton65(false);
                 setButton55(true);
             }
+            setTimeout(()=>{
+                if(useButton65.current){
+                    useButton65.current.focus();
+                    setButton65(true);
+                    setButton55(true);
+                }
+            }, 250)
 
         }
     }
@@ -1705,20 +1978,28 @@ const useBoard = () => {
             
         if(e.key === 'ArrowRight'){
             e.preventDefault();
-            if(useButton67.current){
-                useButton67.current.focus();
-                setButton67(true);
-                setButton66(true);
-            }
+            setTimeout(() => {
+                if(useButton67.current){
+                    useButton67.current.focus();
+                    setButton67(true);
+                    setButton66(true);
+                    setButton65(false);
+                }
+            }, 300);
+            
         }
 
         if(e.key === 'ArrowLeft'){
             e.preventDefault();
-            if(useButton65.current){
-                useButton65.current.focus();
-                setButton66(true);
-                setButton65(true);
-            }
+            setTimeout(() => {
+                if(useButton65.current){
+                    useButton65.current.focus();
+                    setButton66(true);
+                    setButton65(true);
+                    setButton67(false);
+                }
+            }, 300);
+            
         }
 
         if(e.key === 'ArrowUp'){
@@ -1764,6 +2045,14 @@ const useBoard = () => {
                 setButton67(false);
                 setButton66(true);
             }
+
+            setTimeout(() => {
+                if(useButton67.current){
+                    useButton67.current.focus();
+                    setButton67(true);
+                    setButton66(true);
+                }
+            }, 300);
             
         }
 
@@ -1788,6 +2077,13 @@ const useBoard = () => {
                 setButton57(true);
                 setButton67(false);
             }
+            setTimeout(() => {
+                if(useButton67.current){
+                    useButton67.current.focus();
+                    setButton57(true);
+                    setButton67(true);
+                }
+            }, 300);
 
         }
     } //Aqui es donde se gana
@@ -1902,6 +2198,13 @@ const useBoard = () => {
                 setButton73(false);
                 setButton74(true);
             }
+            setTimeout(()=>{
+                if(useButton73.current){
+                    useButton73.current.focus();
+                    setButton73(true);
+                    setButton74(true);
+                }
+            }, 250)
         }
 
         if(e.key === 'ArrowLeft'){
@@ -1920,6 +2223,13 @@ const useBoard = () => {
                 setButton73(false);
                 setButton83(true);
             }
+            setTimeout(()=>{
+                if(useButton73.current){
+                    useButton73.current.focus();
+                    setButton73(true);
+                    setButton83(true);
+                }
+            }, 250)
         }
 
         if(e.key === 'ArrowDown'){
@@ -1935,20 +2245,28 @@ const useBoard = () => {
             
         if(e.key === 'ArrowRight'){
             e.preventDefault();
-            if(useButton75.current){
-                useButton75.current.focus();
-                setButton75(true);
-                setButton74(true);
-            }
+            setTimeout(() => {
+                if(useButton75.current){
+                    useButton75.current.focus();
+                    setButton75(true);
+                    setButton74(true);
+                    setButton73(false);
+                }
+            }, 300);
+            
         }
 
         if(e.key === 'ArrowLeft'){
             e.preventDefault();
-            if(useButton73.current){
-                useButton73.current.focus();
-                setButton73(true);
-                setButton74(true);
-            }
+            setTimeout(() => {
+                if(useButton73.current){
+                    useButton73.current.focus();
+                    setButton73(true);
+                    setButton74(true);
+                    setButton75(false);
+                }
+            }, 300);
+           
         }
 
         if(e.key === 'ArrowUp'){
@@ -1983,6 +2301,7 @@ const useBoard = () => {
                 setButton76(true);
                 setButton75(false);
             }
+            
         }
 
         if(e.key === 'ArrowLeft'){
@@ -1992,6 +2311,13 @@ const useBoard = () => {
                 setButton75(false);
                 setButton74(true);
             }
+            setTimeout(()=>{
+                if(useButton75.current){
+                    useButton75.current.focus();
+                    setButton75(true);
+                    setButton74(true);
+                }
+            }, 250)
         }
 
         if(e.key === 'ArrowUp'){
@@ -2001,6 +2327,13 @@ const useBoard = () => {
                 setButton75(false);
                 setButton85(true);
             }
+            setTimeout(()=>{
+                if(useButton75.current){
+                    useButton75.current.focus();
+                    setButton75(true);
+                    setButton85(true);
+                }
+            }, 250)
         }
 
         if(e.key === 'ArrowDown'){
@@ -2034,8 +2367,8 @@ const useBoard = () => {
             e.preventDefault();
             if(useButton75.current){
                 useButton75.current.focus();
-                setButton76(true);
-                setButton75(false);
+                setButton76(false);
+                setButton75(true);
             }
         }
 
@@ -2056,6 +2389,13 @@ const useBoard = () => {
                 setButton76(false);
                 setButton66(true);
             }
+            setTimeout(()=>{
+                if(useButton76.current){
+                    useButton76.current.focus();
+                    setButton76(true);
+                    setButton66(true);
+                }
+            }, 250)
            
 
         }
@@ -2130,6 +2470,13 @@ const useBoard = () => {
                 setButton82(false);
                 setButton83(true);
             }
+            setTimeout(()=>{
+                if(useButton82.current){
+                    useButton82.current.focus();
+                    setButton82(true);
+                    setButton83(true);
+                }
+            }, 250)
         }
 
         if(e.key === 'ArrowLeft'){
@@ -2244,6 +2591,13 @@ const useBoard = () => {
                 setButton86(false);
                 setButton85(true);
             }
+            setTimeout(()=>{
+                if(useButton86.current){
+                    useButton86.current.focus();
+                    setButton86(true);
+                    setButton85(true);
+                }
+            }, 250)
         }
 
         if(e.key === 'ArrowDown'){

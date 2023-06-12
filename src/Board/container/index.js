@@ -223,7 +223,8 @@ export default function Board() {
 }= useBoard();
 
   return (
-    <div style={{height:'480px', width:'480px', border:'1px solid black', display:'flex', flexDirection:'row', flexWrap:'wrap'}}>
+   
+        <div style={{height:'480px', width:'480px', border:'1px solid black', display:'flex', flexDirection:'row', flexWrap:'wrap'}}>
         
         <button ref={useButton81} onKeyDown={onKeyDownButton81} style={{height:'60px', width:'60px', border:'1px solid black'}}> <Cell element='Agente' isVisible={button81} /></button>
         <button ref={useButton82} onKeyDown={onKeyDownButton82} style={{height:'60px', width:'60px', border:'1px solid black'}}> <Cell element='Agente' isVisible={button82} /></button>
@@ -297,7 +298,7 @@ export default function Board() {
         <button ref={useButton17} onKeyDown={onKeyDownButton17} style={{height:'60px', width:'60px', border:'1px solid black'}}><Cell element='Agente' isVisible={button17} /></button>
         <button ref={useButton18} onKeyDown={onKeyDownButton18} style={{height:'60px', width:'60px', border:'1px solid black'}}><Cell element='Agente' isVisible={button18} /></button>
     
-
-    </div>
+        </div>
+        
   )
 }
